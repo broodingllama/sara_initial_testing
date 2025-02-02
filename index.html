@@ -2,14 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Healthcare Platform</title>
+  <title>SARA</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N9SYXH88Z3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-N9SYXH88Z3');
+</script>
 
   <!-- Google Fonts Example: Poppins -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
   
   <!-- Main CSS -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  
 </head>
 <body>
 
@@ -25,44 +37,46 @@
   <div class="plans-container">
 
     <!-- Plan A -->
-    <div class="plan-card" onclick="trackPlanClick('Plan A')">
+    <div class="plan-card featured">
       <h3>Plan A</h3>
       <p class="plan-price">$250 / month</p>
       <ul>
-        <li>Get 24/7 routine care via AI Agents</li>
-        <li>Visit virtually with real doctors</li>
-        <li>Find insurance</li>
+        <li>Two human clinician visits per month </li>
+        <li>Unlimited preventative care through AI agents</li>
+        <li>Comperhensive guidance on lowering your hospital bill</li>
+        <li>Assistance navigating billing options in emergency care situations</li>
+        <!-- comprehensive education on lowering bill -->
       </ul>
-      <button class="plan-select-btn">Learn About Plan A</button>
+      <button class="plan-select-btn" onclick="trackPlanClick('Plan A'); window.location.href='plan_a.html'"> Learn About Plan A</button>
     </div>
 
     <!-- Plan B (middle) -->
     <div class="plan-card featured" onclick="trackPlanClick('Plan B')">
       <h3>Plan B</h3>
-      <p class="plan-price">$120 / month</p>
+      <p class="plan-price">$50 / visit</p>
       <ul>
-        <li>Custom middle tier features here</li>
-        <li>Get 24/7 routine care via AI Agents</li>
-        <li>Visit virtually with a doctor once a month</li>
+        <li>$50 per visit with clinician</li>
         <!-- Add more items describing Plan C -->
       </ul>
-      <button class="plan-select-btn">Learn About Plan B</button>
+      <button class="plan-select-btn" onclick="trackPlanClick('Plan B'); window.location.href='plan_b.html'"> Learn About Plan B</button>
     </div>
 
     <!-- Plan C -->
-    <div class="plan-card" onclick="trackPlanClick('Plan C')">
+    <div class="plan-card featured" onclick="trackPlanClick('Plan C')">
       <h3>Plan C</h3>
-      <p class="plan-price">$50 / month</p>
+      <p class="plan-price">$100 / consultation</p>
       <ul>
-        <li>Visit virtually with a doctor once a month</li>
-        <li>No hospital coverage included</li>
+        <li></li>
+        <li>Assistance navigating billing options in emergency care situations</li>
         <!-- Add more details if needed -->
       </ul>
-      <button class="plan-select-btn">Learn About Plan C</button>
+      <button class="plan-select-btn" onclick="trackPlanClick('Plan C'); window.location.href='plan_c.html'"> Learn About Plan C</button>
     </div>
 
   </div>
 </section>
+
+
 
 
   <!-- NAVIGATION / OTHER LINKS (optionally overlay or place below hero) -->
@@ -91,7 +105,9 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 My Healthcare Platform</p>
+    <p>&copy; 2025 SARA</p>
   </footer>
+
+  <script src="javascript/main.js"></script>
 </body>
 </html>
