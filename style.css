@@ -1,0 +1,185 @@
+/* Use a modern, clean sans-serif font */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #fff; /* We'll use white text if we have a dark background */
+    background-color: #131D2B; /* fallback background color */
+  }
+  
+  /* HERO SECTION */
+  .hero {
+    /* Full viewport height */
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    /* You could use a background image or gradient */
+    background: linear-gradient(135deg, #1d1d2c 0%, #1d2d50 100%);
+    /* Example: If you have a background image
+     background: url('../img/hero-bg.jpg') center/cover no-repeat;
+    */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* Maybe add some parallax or subtle animation later */
+  }
+  
+  .hero-content {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    opacity: 0.85;
+  }
+  
+  /* CTA button */
+  .cta-button {
+    background-color: #FFC107; /* bright accent color */
+    color: #1f1f1f;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+  }
+  .cta-button:hover {
+    background-color: #e0a806;
+  }
+  
+  /* NAVIGATION */
+  .main-nav {
+    background-color: #1b2b3c;
+    padding: 0.5rem 1rem;
+  }
+  .main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  .main-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .main-nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* SECTION STYLES */
+  .info-section {
+    padding: 2rem 1rem;
+    background-color: #1f2f45; /* slightly different shade */
+  }
+  
+  /* HEADINGS AND TEXT */
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+  
+  /* FOOTER */
+  footer {
+    background-color: #1b2b3c;
+    text-align: center;
+    padding: 1rem;
+    color: #ccc;
+  }
+  
+  .pricing-plans {
+    background-color: #1f2f45; /* or a lighter shade if you prefer */
+    padding: 3rem 1rem;
+    text-align: center;
+  }
+  
+  .pricing-plans h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #fff;
+  }
+  
+  .plans-container {
+    display: flex;
+    flex-wrap: wrap; /* for responsiveness */
+    gap: 1rem;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .plan-card {
+    background-color: #2b3b52;
+    border-radius: 8px;
+    padding: 2rem;
+    flex: 1 1 250px;  /* grow/shrink, min width ~250px */
+    max-width: 350px; /* optionally cap the width */
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  /* A slight highlight for the middle plan */
+  .plan-card.featured {
+    background-color: #334966;
+    border: 2px solid #FFC107; /* highlight color */
+    transform: scale(1.03);
+  }
+  
+  .plan-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .plan-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .plan-price {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+  
+  .plan-card ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  
+  .plan-card ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* “Select Plan” button */
+  .plan-select-btn {
+    background-color: #FFC107;
+    color: #1f1f1f;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+  }
+  
+  .plan-select-btn:hover {
+    background-color: #e0a806;
+  }
