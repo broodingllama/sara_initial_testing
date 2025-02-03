@@ -106,16 +106,33 @@ footer {
 
 .pricing-plans h2 {
   font-size: 2.5rem;
+  text-align: center;
   margin-bottom: 2rem;
-  color: #fff;
+}
+
+/* Reduce size for mobile */
+@media (max-width: 768px) {
+  .pricing-plans h2 {
+    font-size: 1.8rem;
+  }
 }
 
 /* PLANS CONTAINER */
 .plans-container {
   display: flex;
+  flex-wrap: wrap;  /* Allows stacking on smaller screens */
   gap: 20px;
   justify-content: center;
   align-items: stretch; /* Forces all plan cards to be the same height */
+}
+
+/* Improve text alignment on mobile */
+@media (max-width: 768px) {
+  .site-header p {
+    text-align: center;
+    font-size: 1rem;
+    padding: 0 15px; /* Adds spacing */
+  }
 }
 
 /* INDIVIDUAL PLAN CARD */
@@ -185,6 +202,17 @@ footer {
   border-radius: 4px;
   font-weight: 600;
   transition: background-color 0.3s;
+  width: 100%;
+  max-width: 300px;  /* Ensures button doesn't stretch */
+  text-align: center;
+}
+
+/* Adjust button spacing on mobile */
+@media (max-width: 768px) {
+  .plan-select-btn {
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+  }
 }
 
 .plan-select-btn:hover {
