@@ -56,18 +56,21 @@ body {
 .main-nav {
   background-color: #1b2b3c;
   padding: 0.5rem 1rem;
+  text-align: center;
   overflow-x: auto; /* Ensures horizontal scrolling if needed */
 }
 
 .main-nav ul {
   list-style: none;
   display: flex;
+  flex-wrap: wrap; /* Allows items to wrap on small screens */
   gap: 1rem;
   justify-content: center;
+  align-items: center;
   margin: 0;
   padding: 0;
-  flex-wrap: wrap;
-  flex-direction: row;
+  width: 100%;
+  flex-direction: row; /* Ensures it's always horizontal */
 }
 
 .main-nav a {
@@ -75,7 +78,7 @@ body {
   text-decoration: none;
   font-weight: 500;
   padding: 0.5rem 1rem; /* Adds spacing for better touch interaction */
-  white-space: nowrap;
+  white-space: nowrap; /* Prevents text from breaking */
 }
 
 .main-nav a:hover {
