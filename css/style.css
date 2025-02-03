@@ -56,6 +56,7 @@ body {
 .main-nav {
   background-color: #1b2b3c;
   padding: 0.5rem 1rem;
+  overflow-x: auto; /* Ensures horizontal scrolling if needed */
 }
 
 .main-nav ul {
@@ -65,16 +66,32 @@ body {
   justify-content: center;
   margin: 0;
   padding: 0;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .main-nav a {
   color: #fff;
   text-decoration: none;
   font-weight: 500;
+  padding: 0.5rem 1rem; /* Adds spacing for better touch interaction */
+  white-space: nowrap;
 }
 
 .main-nav a:hover {
   text-decoration: underline;
+}
+
+/* Ensure nav scales properly on mobile */
+@media (max-width: 768px) {
+  .main-nav ul {
+    flex-wrap: wrap; /* Allows it to break into multiple lines if needed */
+    padding: 0 1rem;
+  }
+
+  .main-nav a {
+    font-size: 14px; /* Slightly smaller text for mobile */
+  }
 }
 
 /* INFO SECTION */
